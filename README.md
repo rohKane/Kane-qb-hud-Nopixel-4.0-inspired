@@ -1,3 +1,6 @@
+# Heavily edited of QBCore Hud by me into Nopixel 4.0 inspired design with manual transmission.
+
+
 
 # Things you should know:
 * To open the menu in-game the **default key** is **"I"** or you can type **"/menu"**
