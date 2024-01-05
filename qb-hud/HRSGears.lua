@@ -1,6 +1,3 @@
-
-
-
 local vehicle = nil
 local numgears = nil
 local topspeedGTA = nil
