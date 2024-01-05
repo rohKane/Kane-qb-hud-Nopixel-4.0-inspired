@@ -196,7 +196,7 @@
     }
     #seatbelt {
         position: relative;
-        left: 8.8vh !important;
+        left: 4vh !important;
     }
     speed {
         font-size: 1.4vh !important;
@@ -261,7 +261,7 @@
     }
     #seatbelt {
         position: relative;
-        left: 8.8vh !important;
+        left: 4.8vh !important;
     }
     speed {
         font-size: 1.4vh !important;
@@ -478,7 +478,7 @@
     }
     #seatbelt {
         position: relative;
-        left: 8.5vh !important;
+        left: -5.8vh !important;
     }
     speed {
         font-size: 2vh !important;
