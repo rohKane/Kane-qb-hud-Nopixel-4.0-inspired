@@ -1096,8 +1096,6 @@ const vehHud = {
             }                 
             this.showSeatbelt = data.showSeatbelt;
             this.showAltitude = data.showAltitude;
-            this.showSquareB = data.showSquareB;
-            this.showCircleB = data.showCircleB;
 
 
             // later when you want to fade in
