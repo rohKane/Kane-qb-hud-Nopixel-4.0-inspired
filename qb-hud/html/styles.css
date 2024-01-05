@@ -395,6 +395,9 @@ altitude {
 #SeatbeltIcon {
     position: absolute;
     transition: opacity 1s ease-in-out;
+    top: -12.8vh; 
+    width: 25px; 
+    height: 25px;
 }
   
 
@@ -405,6 +408,7 @@ altitude {
 /* RPM Counter*/
 .container {
     width: 100%;
+    position: relative;
 }
 
 .item {
