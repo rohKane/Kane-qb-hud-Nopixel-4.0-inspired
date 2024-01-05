@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/pricedown");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+
+/* Menu */
+div#openmenu {
+    display: none;
+    position: absolute;
+    width: 50%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.brand-logo {
+    width: 25%;
+} /* when using an svg all you need to change is the width and it will resize it */
+
+/* Menu tab & panel styles */
+.text-tabcolor {
+    color: rgb(255, 255, 255) !important;
+}
+.bg-active-tab {
+    background: rgb(25 25 25) !important;
+}
+.bg-panel {
+    background: rgb(30 30 30) !important;
+}
+.q-tab-panels {
+    border-top-right-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+} /* change all 12px for a different border radius (rounds edges of the menu) */
+.q-splitter__panel.q-splitter__before {
+    border-top-left-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+} /* change all 12px for a different border radius (rounds edges of the menu) */
+.q-tabs--vertical.q-tabs--not-scrollable .q-tabs__content {
+    border-top-left-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+} /* change all 12px for a different border radius (rounds edges of the menu) */
+
+/* Menu text styles */
+.text-h6 {
+    color: rgb(255, 255, 255) !important;
+}
+.text-h7 {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Menu buttons & checkboxes & toggle switch icons styles */
+.text-textbutton {
+    color: rgb(0, 0, 0) !important;
+}
+.bg-bgbutton {
+    background: #3bd2a8 !important;
+}
+.q-checkbox__inner {
+    color: rgb(255 255 255 / 70%) !important;
+}
+.text-checkbox {
+    color: #3bd2a8 !important;
+}
+.q-checkbox__svg {
+    color: rgb(0, 0, 0) !important;
+}
+.q-checkbox__inner--truthy .q-checkbox__bg {
+    box-shadow: 0px 0px 3px 3px #3bd2a776 !important;
+} /* if you want the checkboxes to have a glow/shadow */
+.text-toggleicons {
+    color: rgb(0, 0, 0) !important;
+}
+
+/* Menu misc */
+hr {
+    opacity: 0.1 !important;
+} /* horizontal line that seperates sections */
+.q-mb-md {
+    margin-bottom: 0px !important;
+} /* removes extra top padding */
+.q-mb-md-d {
+    padding-left: 10px !important;
+    padding-bottom: 10px !important;
+} /* keeps q-items aligned */
+.q-item {
+    padding: 8px 0px !important;
+} /* keeps q-items aligned */
+.q-item__section--avatar {
+    min-width: 40px !important;
+} /* keeps q-items aligned */
+.q-item__section--side {
+    padding-right: 0px !important;
+} /* keeps q-items aligned */
+.q-splitter--vertical > .q-splitter__separator {
+    width: 0px !important;
+} /* keeps navigation tab panel seamless */
+div#q-loading-bar {
+    display: none !important;
+} /* makes sure there's no ajax load from quasar */
+::-webkit-scrollbar {
+    display: none !important;
+} /* makes sure there's no ugly scrollbar on menu*/
+
+/* Hud radial styles */
+.text-health {
+    color: rgb(33, 171, 97) !important;
+}
+.text-stress {
+    color: rgb(255, 0, 0) !important;
+}
+.text-nos {
+    color: rgb(255, 72, 133) !important;
+}
+.text-cruise {
+    color: rgb(255, 72, 133) !important;
+}
+.text-armed {
+    color: rgb(255, 72, 133) !important;
+}
+.text-harness {
+    color: rgb(182, 72, 255) !important;
+}
+.text-oxygen {
+    color: rgb(138, 168, 189) !important;
+}
+.text-parachute {
+    color: rgb(0, 0, 0) !important;
+}
+.text-dev {
+    color: rgb(0, 0, 0) !important;
+}
+.text-gauge {
+    color: rgb(255, 255, 255) !important;
+}
+
+#main-container {
+    width: 100%;
+    height: auto;
+}
+
+/* Money */
+#money-container {
+    position: absolute;
+    right: 2vw;
+    top: 5vh;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#sign,
+#bank {
+    font-family: "Pricedown Bl", sans-serif;
+    text-align: right;
+    color: #13772d;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+#plus {
+    font-size: 50px;
+    font-family: "Pricedown Bl", sans-serif;
+    text-align: right;
+    color: #13772d;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+#minus {
+    font-size: 50px;
+    font-family: "Pricedown Bl", sans-serif;
+    text-align: right;
+    color: #ac0000;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+#money {
+    font-family: "Pricedown Bl", sans-serif;
+    text-align: right;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* Player HUD */
+
+#playerhud {
+    position: absolute;
+    display: flex;
+    left: 2vh;
+    bottom: 0vw;
+}
+
+.q-ml-xl {
+    margin-left: -22px !important; /* Change this to space radials */
+}
+
+/* Vehicle HUD */
+
+#speed:after {
+    content: "KPH"; /* If using KPH change this content from MPH */
+    display: block;
+    position: absolute;
+    font-family: 'Gravitica', sans-serif;
+    color: rgba(255, 255, 255, 0.873);
+    top: -0.5vh;
+    left: 2vh;
+    padding-bottom: 8px;
+    font-weight: 900;
+    font-size: 7.5px;
+    text-shadow: none;
+}
+
+altitude:after {
+    content: "ALT";
+    display: block;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Gravitica';
+    src: url('https://res.cloudinary.com/davecbj4z/raw/upload/v1686655001/ckhans-fonts-gravitica-light-demo_xrit7c.otf');
+}
+
+#speed {
+    transform: rotate(150deg);
+    font-size: 2.1vh;
+    position: absolute;
+    font-family: 'Gravitica', sans-serif;
+    color: #5a5a5a;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+altitude {
+    transform: rotate(135deg);
+    font-size: 2.4vh;
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* Animation */
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/* Compass */
+.baseplate {
+    position: relative;
+    margin: 0 auto;
+    top: -0.8vh;
+    width: 150px;
+    height: auto;
+}
+
+.street-container {
+    position: relative;
+    top: 0.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vh;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 800;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+}
+
+.street1 {
+    position: absolute;
+    margin: 0 auto;
+    right: 55%;
+    text-align: right !important;
+    color: rgb(255, 255, 255);
+}
+
+.street2 {
+    position: absolute;
+    margin: 0 auto;
+    left: 55%;
+    text-align: left !important;
+    color: rgb(255, 255, 255);
+}
+
+.pointer {
+    position: absolute;
+    margin: 0 auto;
+    top: -2%;
+    left: 0;
+    right: 0;
+    font-family: "Yantramanav", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2.2vh;
+    text-align: center;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+.degrees {
+    position: absolute;
+    margin: 0 auto;
+    top: 80%;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    font-family: "Yantramanav", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.5vh;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0 0 1px rgb(0 0 0 / 60%), 0 0 1px rgb(0 0 0 / 60%), 0 0 1px rgb(0 0 0 / 60%), 0 0 1px rgb(0 0 0 / 60%);
+}
+
+.bezel {
+    position: relative;
+    width: 100%;
+    height: 2vh;
+    font-family: "Yantramanav", sans-serif;
+    font-size: 0.35vh;
+    font-weight: 700;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+}
+
+.bearing {
+    position: relative;
+    width: 100%;
+    top: -0.5vh;
+    height: 3.5vh;
+    padding-left: 0.12vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3vh;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 600;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+}
+
+
+
+:root {
+  --radio-bar-color: #84898f; /* Default color */
+  --talk-bar-color: #84898f; /* Default color */
+}
+
+
+
+/* Fuel Counter */
+#progressBar {
+    width: 0.630vw; /* Adjust as needed */
+    height: 8.5vh; /* Adjust as needed */
+    position: relative;
+    border-width: 0.15vw; /* Adjust as needed */
+    border-style: solid;
+    border-color: #2b2b2bd3;
+    background: #2b2b2b9a;
+}
+  
+#progressBar .progress {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%; /* Start with 0% height */
+    background: #ffffff;
+    transition: height 0.5s;
+}
+  
+
+#SeatbeltIcon {
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    top: -12.8vh; 
+    width: 25px; 
+    height: 25px;
+}
+  
+
+
+/* End Fuel Counter */
+
+
+/* RPM Counter*/
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.item {
+    width: 0.62vh;
+    /*border: 1px solid #5f6167;*/
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    margin-left:3.5px;
+    float: left;
+    display: block;
+    height: 3.3vh;
+}
+
+.filled {
+    background-color: #3bd2a8 !important;
+}
+
+.critical {
+    background-color: #cc4d53 !important;
+}
+
+
+.colorcreator {
+    color: rgba(29, 136, 186, 0.352);
+}
+
+/* End of RPM Counter*/
+
+
+#gearBox {
+    position: absolute;
+    width: 37px;
+    height: 49px;
+    border-radius: 3px;
+    background-color: #3bd2a8;
+    /* Add an inside shadow and an outside glow */
+    box-shadow: inset 0 0 10px 1px #000000df, 0 0 6px #3bd2a8;
+}
+  
+
+/* Gears Counter*/
+
+#gear {
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(21, 20, 24);
+    text-align: center;
+}
