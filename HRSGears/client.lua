@@ -1,6 +1,4 @@
-
-
-
+--- WHAT is this ---
 local vehicle = nil
 local numgears = nil
 local topspeedGTA = nil
@@ -325,44 +323,42 @@ end
     end
 end)]]
 
+-- Register the key bindings
+RegisterKeyMapping('+gearUp', 'Gear Up', 'keyboard', 'LSHIFT')
+RegisterKeyMapping('+gearDown', 'Gear Down', 'keyboard', 'LCONTROL')
+
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0) 
-        
+
         if manualon == true and vehicle ~= nil then
-
             if vehicle ~= nil then
-
-
-            
-            -- Shift up and down
-                if ready == true then
-                    if IsDisabledControlJustPressed(0, 86) then
-                        if selectedgear <= numgears - 1 then 
-                            DisableControlAction(0, 71, true)
-                            --Wait(300)
-                            --TriggerEvent("InteractSound_CL:PlayOnOne","lock",0.1)
-                            selectedgear = selectedgear + 1
-                            DisableControlAction(0, 71, false)
-                            SimulateGears()
-                        end
-                    elseif IsDisabledControlJustPressed(0, 52) then
-                        if selectedgear > -1 then
-                           
-                            DisableControlAction(0, 71, true)
-                            --Wait(300)
-                            selectedgear = selectedgear - 1
-                            DisableControlAction(0, 71, false)
-                            SimulateGears()
-                        end
+                -- Shift up and down
+                RegisterCommand('+gearUp', function()
+                    if ready == true and selectedgear <= numgears - 1 then
+                        DisableControlAction(0, 71, true)
+                        --Wait(300)
+                        --TriggerEvent("InteractSound_CL:PlayOnOne","lock",0.1)
+                        selectedgear = selectedgear + 1
+                        DisableControlAction(0, 71, false)
+                        SimulateGears()
                     end
-                end
+                end, false)
+
+                RegisterCommand('+gearDown', function()
+                    if ready == true and selectedgear > -1 then
+                        DisableControlAction(0, 71, true)
+                        --Wait(300)
+                        selectedgear = selectedgear - 1
+                        DisableControlAction(0, 71, false)
+                        SimulateGears()
+                    end
+                end, false)
             end
-
         end
-
     end
 end)
+
 
 
 
