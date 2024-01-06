@@ -220,7 +220,7 @@
                         <div v-if="showVoice" style="position: relative; margin-left: 4px;">
                             <div class="ldBar" data-value="0" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill-dir="btt" data-fill-background="var(--talk-bar-color)" data-fill-background-extrude="1" style="width:59px;height:59px;top: 10px;left: -30px; position:absolute; opacity:58%;"></div>
                             <div id="Voices" class="ldBar" data-value :value="voice" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill="var(--talk-bar-color)" data-fill-dir="btt" data-fill-background="#84898f5f"  data-fill-background-extrude="0" style="width:48px;height:48px;top: 15px; left: -25px;"></div>
-                            <q-icon id="Icons" style="top: -18px; left: -5px; font-size: 18px;" :name="voiceIcon" color="white"/>
+                            <q-icon id="Icons" style="top: -18px; left: -4px; font-size: 17px;" :name="voiceIcon" color="white"/>
                         </div>
                     </transition>    
                     <transition name="fade">
@@ -228,21 +228,21 @@
                             <!-- Health Bar -->
                             <div class="ldBar" data-value="0" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill-dir="btt" data-fill-background="#147a47" data-fill-background-extrude="1" style="width:59px;height:59px;top: 10px;left: -35px; position:absolute; opacity:55%;"></div>
                             <div id="Health" class="ldBar" data-value :value="health" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill="#20ae67" data-fill-dir="btt" data-fill-background="#20ae6754"  data-fill-background-extrude="0" style="width:48px;height:48px;top: 15px; left: -30px;"></div>
-                            <q-icon id="Icons" style="top: -18px; left: -10px; font-size: 18px;" name="fas fa-heart" color="white"/>
+                            <q-icon id="Icons" style="top: -16px; left: -9px; font-size: 17px;" name="fas fa-heart" color="white"/>
                         </div>
                     </transition>                    
                     <transition name="fade">
                         <div v-show="showArmor" id="armorGroup" style="position: relative;margin-left: 4px;;">
                             <div class="ldBar" data-value="0" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill-dir="btt" data-fill-background="#1e4264" data-fill-background-extrude="1" style="width:59px;height:59px;top: 10px;left: -40px; position:absolute; opacity:55%;"></div>
                             <div id="Armor" class="ldBar" data-value :value="armor" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill="#216098" data-fill-dir="btt" data-fill-background="#1a436a94"  data-fill-background-extrude="0" style="width:48px;height:48px;top: 15px; left: -35px;"></div>
-                            <q-icon id="Icons" style="top: -18px; left: -15px; font-size: 18px;" name="fas fa-shield" color="white"/>
+                            <q-icon id="Icons" style="top: -17px; left: -14px; font-size: 17px;" name="fas fa-shield" color="white"/>
                         </div>
                     </transition>
                     <transition name="fade">
                         <div v-show="showHunger" id="hungerGroup" style="position: relative;margin-left: 5px;">
                             <div class="ldBar" data-value="0" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill-dir="btt" data-fill-background="#985f31" data-fill-background-extrude="1" style="width:59px;height:59px;top: 10px;left: -45px; position:absolute; opacity:55%;"></div>
                             <div id="Hunger" class="ldBar" data-value :value="hunger" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill="#cd7e3e" data-fill-dir="btt" data-fill-background="#985f3182"  data-fill-background-extrude="0" style="width:48px;height:48px;top: 15px; left: -40px;"></div>
-                            <q-icon id="Icons" style="top: -18px; left: -20px; font-size: 18px;" name="fas fa-hamburger" color="white"/>
+                            <q-icon id="Icons" style="top: -18px; left: -19px; font-size: 17px;" name="fas fa-hamburger" color="white"/>
                         </div>
                     </transition>
                     <transition name="fade">
@@ -256,7 +256,7 @@
                         <div v-show="showStress" id="stressGroup" :style="{ 'margin-left': showArmor ? (showHunger ? '5px' : (showThirst ? '8px' : '15px')) : '4px' }" style="position: relative;">
                             <div class="ldBar" data-value="0" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill-dir="btt" data-fill-background="#4f2a32" data-fill-background-extrude="1" style="width:59px;height:59px;top: 10px;left: -55px; position:absolute; opacity:50%;"></div>
                             <div id="Stress" class="ldBar" data-value :value="stress" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill="#a0383a" data-fill-dir="btt" data-fill-background="#4f2a3282"  data-fill-background-extrude="0" style="width:48px;height:48px;top: 15px; left: -50px;"></div>
-                            <q-icon id="Icons" style="top: -18px; left: -30px; font-size: 18px;" name="fas fa-brain" color="white"/>
+                            <q-icon id="Icons" style="top: -18px; left: -29px; font-size: 17px;" name="fas fa-brain" color="white"/>
                         </div>
                     </transition>
                     <transition name="fade">
