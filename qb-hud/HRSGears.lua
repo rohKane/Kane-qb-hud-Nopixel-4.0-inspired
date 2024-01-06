@@ -334,7 +334,7 @@ Citizen.CreateThread(function()
             if vehicle ~= nil then
                 -- Shift up and down
                 RegisterCommand('+gearUp', function()
-                    if ready == true and selectedgear <= numgears - 1 then
+                    if isInVehicleModel and ready == true and selectedgear <= numgears - 1 then
                         DisableControlAction(0, 71, true)
                         --Wait(300)
                         --TriggerEvent("InteractSound_CL:PlayOnOne","lock",0.1)
@@ -345,7 +345,7 @@ Citizen.CreateThread(function()
                 end, false)
 
                 RegisterCommand('+gearDown', function()
-                    if ready == true and selectedgear > -1 then
+                    if isInVehicleModel and ready == true and selectedgear > -1 then
                         DisableControlAction(0, 71, true)
                         --Wait(300)
                         selectedgear = selectedgear - 1
