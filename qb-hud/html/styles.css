@@ -389,8 +389,9 @@ altitude {
     height: 0%; /* Start with 0% height */
     background: #ffffff;
     transition: height 0.5s;
+    box-sizing: border-box; /* Include padding and border in width */
 }
-  
+
 
 #SeatbeltIcon {
     position: absolute;
