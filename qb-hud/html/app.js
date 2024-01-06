@@ -1092,8 +1092,9 @@ const vehHud = {
                     progressBar.style.backgroundColor = '#ffffff';
                 }
             } else {
-                console.log("oh you're in a car?");
-            }                 
+                //console.log("oh you're in a car?");
+            }    
+                         
             this.showSeatbelt = data.showSeatbelt;
             this.showAltitude = data.showAltitude;
 
@@ -1102,11 +1103,20 @@ const vehHud = {
             
             if (data.seatbelt === true) {
                 this.seatbelt = 1;
-                document.getElementById('SeatbeltIcon').style.opacity = 0;
+                let seatbeltIcon = document.getElementById('SeatbeltIcon');
+                if(seatbeltIcon) {
+                    seatbeltIcon.style.opacity = 0;
+                }
             } else {
                 this.seatbelt = 0;
-                document.getElementById('SeatbeltIcon').style.opacity = 1;
+                let seatbeltIcon = document.getElementById('SeatbeltIcon');
+                if(seatbeltIcon) {
+                    seatbeltIcon.style.opacity = 1;
+                }
             }
+            
+
+            
             
             if (data.showSeatbelt === true) {
                 this.showSeatbelt = true;
