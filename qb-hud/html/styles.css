@@ -374,7 +374,7 @@ altitude {
 /* Fuel Counter */
 #progressBar {
     width: 0.630vw; /* Adjust as needed */
-    height: 8.5vh; /* Adjust as needed */
+    height: 8.3vh; /* Adjust as needed */
     position: relative;
     border-width: 0.15vw; /* Adjust as needed */
     border-style: solid;
@@ -419,7 +419,7 @@ altitude {
     margin-left:3.5px;
     float: left;
     display: block;
-    height: 3.3vh;
+    height: 3.1vh;
 }
 
 .filled {
