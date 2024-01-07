@@ -413,11 +413,11 @@ altitude {
 }
 
 .item {
-    width: 0.62vh;
+    width: 0.5vh;
     /*border: 1px solid #5f6167;*/
     background-color: rgb(70, 70, 70);
     border-radius: 10px;
-    margin-left:3.5px;
+    margin-left:4px;
     float: left;
     display: block;
     height: 3.1vh;
@@ -457,4 +457,9 @@ altitude {
     font-weight: 500;
     color: rgb(21, 20, 24);
     text-align: center;
+}
+
+
+#god {
+    color: rgba(182, 72, 255, 0.5);
 }
