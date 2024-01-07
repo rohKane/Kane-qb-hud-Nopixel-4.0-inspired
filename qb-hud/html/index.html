@@ -289,8 +289,8 @@
                     </transition>
                     <transition name="fade">
                         <div v-show="showHarness"  id="harnessGroup" :style="{ 'margin-left': showEngine ? '2px' : (showArmor ? (showThirst ? '8px' : (showStress ? '2px' : (showHunger ? '13px' : '18px'))) : '4px') }" style="position: relative;">
-                            <div class="ldBar" data-value="0" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill-dir="btt" data-fill-background="rgb(182, 72, 255)" data-fill-background-extrude="1" style="width:58px;height:58px;top: 10px;left: -60px; position:absolute; opacity:50%;"></div>
-                            <div id="Harness" class="ldBar" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill="rgb(182, 72, 255)" data-fill-dir="btt" data-fill-background="rgba(182, 72, 255, 0.483)"  data-fill-background-extrude="0" style="width:48px;height:48px;top: 15px; left: -55.1px;"></div>
+                            <div class="ldBar" data-value="0" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill-dir="btt" data-fill-background="rgba(182, 72, 255, 0.540)" data-fill-background-extrude="1" style="width:58px;height:58px;top: 10px;left: -60px; position:absolute; opacity:50%;"></div>
+                            <div id="Harness" class="ldBar" data-type="fill" data-path="M10 30 L45 10 L80 30 L80.5 70 L45 90 L10 70 Z" data-fill="rgb(182, 72, 255)" data-fill-dir="btt" data-fill-background="rgba(182, 72, 255, 0.540)"  data-fill-background-extrude="0" style="width:48px;height:48px;top: 15px; left: -55.1px;"></div>
                             <q-icon id="Icons" style="top: -20px; left: -35px; font-size: 18px;" name="fas fa-user-slash" color="white"/>
                         </div>
                     </transition>
@@ -321,15 +321,15 @@
                 <div v-show="show">                    
                     <div class="responsive" id="speedometer">
                         <div id="rpmBar" class="container" style="width: 100%; left: -20%;top: 20%;"></div>
-                        <div id="Speed" style="transform: scale(2.7) rotate(0deg); left: 35%; top: -150%;" v-html="speedDisplay"></div>
-                        <div id="gearBox" style="top: -182%;left: -10%;">
+                        <div id="Speed" style="transform: scale(2.7) rotate(0deg); left: 40%; top: -150%;" v-html="speedDisplay"></div>
+                        <div id="gearBox" style="top: -182%;left: -16%;">
                         <div id="gear" style="text-align: center; position: absolute; left: -85%; bottom: -92%; width: 100px; height: 100px;">0</div>
                         <q-icon id="Icons" style="top: 2.6vh; left: 0.9vh; font-size: 17px;" name="fas fa-cogs" color="black"/>
                         <!-- This is the html file for the number hud -->
                         </div>
                     </div>
                     <div class="responsive" id="fuelgauge">
-                        <div id="progressBar" style="left: 880%; top: 100%;">
+                        <div id="progressBar" style="left: 800%; top: 100%;">
                             <div class="progress" style="height: 0;">
                         </div>
                         <q-icon id="FuelGaugeIcon" name="fas fa-gas-pump" style="font-size: 15px;left: -0.10vw; top: -2.5vh;" color="white"/>
