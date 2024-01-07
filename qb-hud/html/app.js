@@ -823,7 +823,8 @@ const playerHud = {
             this.speed = data.speed;
             this.armed = data.armed;
             this.parachute = data.parachute;
-            this.hp = data.hp * 5;
+            //this.hp = data.hp * 5;
+            harnessBar.set(data.hp * 5);
             //this.engine = data.engine;
             engineBar.set(data.engine);
             this.cinematic = data.cinematic;
@@ -1250,6 +1251,7 @@ var stressBar = new ldBar("#Stress");
 var oxygenBar = new ldBar("#Oxygen");
 var engineBar = new ldBar("#Engine");
 var nosBar = new ldBar("#Nos");
+var harnessBar = new ldBar("#Harness");
   
 
 
