@@ -268,6 +268,11 @@ altitude {
 }
 
 /* Compass */
+
+#baseplate-container {
+    background: radial-gradient(at top, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0) 100%);
+}
+
 .baseplate {
     position: relative;
     margin: 0 auto;
@@ -295,7 +300,7 @@ altitude {
     margin: 0 auto;
     right: 55%;
     text-align: right !important;
-    color: rgb(255, 255, 255);
+    color: #3bd2a8;
 }
 
 .street2 {
@@ -303,7 +308,7 @@ altitude {
     margin: 0 auto;
     left: 55%;
     text-align: left !important;
-    color: rgb(255, 255, 255);
+    color: #3bd2a8;
 }
 
 .pointer {
@@ -313,7 +318,7 @@ altitude {
     left: 0;
     right: 0;
     font-family: "Yantramanav", sans-serif;
-    color: rgb(255, 255, 255);
+    color: #3bd2a8;
     font-size: 2.2vh;
     text-align: center;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);

@@ -20,7 +20,7 @@
                 <div class="street1">{{street1}}</div>
             </div>
             <div class="baseplate" v-show="show">
-                <div v-if="showPointer" class="pointer">˅</div>
+                <div v-if="showPointer" class="pointer">♦</div>
                 <div v-if="showDegrees" class="degrees"></div>
                     <svg class="bezel">
                         <rect width="3" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="20" x="-90"/>
@@ -39,8 +39,8 @@
                     </svg>
 
                     <svg class="bearing">
-                        <text v-if="showCompass" x="0" y="1.5" dominant-baseline="middle" text-anchor="middle" fill= "yellow">N</text>
-                        <text v-if="showCompass" x="360" y="1.5" dominant-baseline="middle" text-anchor="middle" fill= "yellow">N</text>
+                        <text v-if="showCompass" x="0" y="1.5" dominant-baseline="middle" text-anchor="middle" fill= "white">N</text>
+                        <text v-if="showCompass" x="360" y="1.5" dominant-baseline="middle" text-anchor="middle" fill= "white">N</text>
                         <text style="font-size: 1.4vh!important; font-weight: 800!important;" v-if="showCompass" x="315" y="-11" dominant-baseline="middle" text-anchor="middle" fill="white">NW</text>
                         <text style="font-size: 1.4vh!important; font-weight: 800!important;" v-if="showCompass" x="-45" y="-11" dominant-baseline="middle" text-anchor="middle" fill="white">NW</text>
                         <text style="font-size: 1.4vh!important; font-weight: 800!important;" v-if="showCompass" x="45" y="-11" dominant-baseline="middle" text-anchor="middle" fill="white">NE</text>
