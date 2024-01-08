@@ -1,5 +1,6 @@
 # Heavily edited of QBCore Hud by me into Nopixel 4.0 inspired design with manual transmission.
-![Screenshot 2024-01-04 234436](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/c373f7a0-5c9c-4c2f-96d3-1745b8ee0b44)
+![Screenshot 2024-01-08 205814](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/6ee7a0a8-a4dd-416c-a647-bbeecdd4723b)
+
 
 
 # Things you should know:
