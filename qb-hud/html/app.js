@@ -1188,7 +1188,7 @@ const baseplateHud = {
         this.listener = window.addEventListener("message", (event) => {
             if (event.data.action == "update") {
                 type = event.data.type;
-                value = event.data.value;
+                value = event.data.value / 2;
                 if (value !== undefined) {
                     $(".degrees").html(value);
                     bar = document.getElementsByTagName("svg")[0];
