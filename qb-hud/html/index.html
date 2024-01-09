@@ -19,37 +19,48 @@
                 <div class="street2">{{street2}}</div>
                 <div class="street1">{{street1}}</div>
             </div>
+            <div id="baseplate-container" v-show="show">
+            <div v-if="showStreets" class="street-container">
+                <div class="street2">{{street2}}</div>
+                <div class="street1">{{street1}}</div>
+            </div>
             <div class="baseplate" v-show="show">
-                <div v-if="showPointer" class="pointer">♦</div>
+                <div v-if="showPointer" class="pointer">⬥</div>
                 <div v-if="showDegrees" class="degrees"></div>
                     <svg class="bezel">
-                        <rect width="3" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="20" x="-90"/>
-                        <rect width="3" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="9" x="-45"/>
-                        <rect width="4.5" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="20" x="0"/>
-                        <rect width="3" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="9" x="45"/>
-                        <rect width="4.5" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="20" x="90"/>
-                        <rect width="3" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="9" x="135"/>
-                        <rect width="4.5" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="20" x="180"/>
-                        <rect width="3" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="9" x="225"/>
-                        <rect width="4.5" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="20" x="270"/>
-                        <rect width="3" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="9" x="315"/>
-                        <rect width="4.5" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="20" x="360"/>
-                        <rect width="3" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="9" x="405"/>
-                        <rect width="3" stroke="black" fill="white" stroke-width="0.5" stroke-opacity="0.6" v-if="showCompass" height="20" x="450"/>
+                        <rect width="1" fill="white" height="3" x="-67.5"></rect>
+                        <rect width="1" fill="white" height="3" x="-45"></rect>
+                        <rect width="1" fill="white" height="3" x="-22.5"></rect>
+                        <rect width="1" fill="white" height="3" x="0"></rect>
+                        <rect width="1" fill="white" height="3" x="22.5"></rect>
+                        <rect width="1" fill="white" height="3" x="45"></rect>
+                        <rect width="1" fill="white" height="3" x="67.5"></rect>
+                        <rect width="1" fill="white" height="3" x="90"></rect>
+                        <rect width="1" fill="white" height="3" x="112.5"></rect>
+                        <rect width="1" fill="white" height="3" x="135"></rect>
+                        <rect width="1" fill="white" height="3" x="157.5"></rect>
+                        <rect width="1" fill="white" height="3" x="180"></rect>
+                        <rect width="1" fill="white" height="3" x="202.5"></rect>
+                        <rect width="1" fill="white" height="3" x="225"></rect>
+                        <rect width="1" fill="white" height="3" x="247.5"></rect>
                     </svg>
 
                     <svg class="bearing">
-                        <text v-if="showCompass" x="0" y="1.5" dominant-baseline="middle" text-anchor="middle" fill= "white">N</text>
-                        <text v-if="showCompass" x="360" y="1.5" dominant-baseline="middle" text-anchor="middle" fill= "white">N</text>
-                        <text style="font-size: 1.4vh!important; font-weight: 800!important;" v-if="showCompass" x="315" y="-11" dominant-baseline="middle" text-anchor="middle" fill="white">NW</text>
-                        <text style="font-size: 1.4vh!important; font-weight: 800!important;" v-if="showCompass" x="-45" y="-11" dominant-baseline="middle" text-anchor="middle" fill="white">NW</text>
-                        <text style="font-size: 1.4vh!important; font-weight: 800!important;" v-if="showCompass" x="45" y="-11" dominant-baseline="middle" text-anchor="middle" fill="white">NE</text>
-                        <text style="font-size: 1.4vh!important; font-weight: 800!important;" v-if="showCompass" x="405" y="-11" dominant-baseline="middle" text-anchor="middle" fill="white">NE</text>
-                        <text v-if="showCompass" x="90" y="1.5" dominant-baseline="middle" text-anchor="middle" fill="white">E</text>
-                        <text style="font-size: 1.4vh!important; font-weight: 800!important;" v-if="showCompass" x="135" y="-11" dominant-baseline="middle" text-anchor="middle" fill="white">SE</text>
-                        <text v-if="showCompass" x="180" y="1.5" dominant-baseline="middle" text-anchor="middle" fill="white">S</text>
-                        <text style="font-size: 1.4vh!important; font-weight: 800!important;" v-if="showCompass" x="225" y="-11" dominant-baseline="middle" text-anchor="middle" fill="white">SW</text>
-                        <text v-if="showCompass" x="270" y="1.5" dominant-baseline="middle" text-anchor="middle" fill="white">W</text>
+                        <text x="0" y="0" dominant-baseline="middle" text-anchor="middle" fill="white">N</text>
+                        <text x="180" y="0" dominant-baseline="middle" text-anchor="middle" fill="white">N</text>
+                        <text x="157.5" y="0" dominant-baseline="middle" text-anchor="middle" fill="#C8C8C8">NW</text>
+                        <text x="-22.5" y="0" dominant-baseline="middle" text-anchor="middle" fill="#C8C8C8">NW</text>
+                        <text x="22.5" y="0" dominant-baseline="middle" text-anchor="middle" fill="#C8C8C8">NE</text>
+                        <text x="202.5" y="0" dominant-baseline="middle" text-anchor="middle" fill="#C8C8C8">NE</text>
+                        <text x="45" y="0" dominant-baseline="middle" text-anchor="middle" fill="white">E</text>
+                        <text x="225" y="0" dominant-baseline="middle" text-anchor="middle" fill="white">E</text>
+                        <text x="67.5" y="0" dominant-baseline="middle" text-anchor="middle" fill="#C8C8C8">SE</text>
+                        <text x="247.5" y="0" dominant-baseline="middle" text-anchor="middle" fill="#C8C8C8">SE</text>
+                        <text x="90" y="0" dominant-baseline="middle" text-anchor="middle" fill="white">S</text>
+                        <text x="112.5" y="0" dominant-baseline="middle" text-anchor="middle" fill="#C8C8C8">SW</text>
+                        <text x="-67.5" y="0" dominant-baseline="middle" text-anchor="middle" fill="#C8C8C8">SW</text>
+                        <text x="135" y="0" dominant-baseline="middle" text-anchor="middle" fill="white">W</text>
+                        <text x="-45" y="0" dominant-baseline="middle" text-anchor="middle" fill="white">W</text>
                     </svg>
                 </div>
             </div>
