@@ -703,9 +703,9 @@ CreateThread(function()
             playerDead = IsEntityDead(player) or PlayerData.metadata['inlaststand'] or PlayerData.metadata['isdead'] or false
             parachute = GetPedParachuteState(player)
             -- Stamina
-            if not IsEntityInWater(player) then
-                oxygen = 100 - GetPlayerSprintStaminaRemaining(playerId)
-            end
+            --if not IsEntityInWater(player) then
+                --oxygen = 100 - GetPlayerSprintStaminaRemaining(playerId)
+            --end
             -- Oxygen
             if IsEntityInWater(player) then
                 oxygen = GetPlayerUnderwaterTimeRemaining(playerId) * 10
