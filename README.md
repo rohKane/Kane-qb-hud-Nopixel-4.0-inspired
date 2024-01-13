@@ -3,7 +3,7 @@
 
 
 # Add Manual transmission car
-* I've also edit HRSGears into checking vehicle instead of using command to enable it. Here go to HRSGears client.lua on line 28 add the car you want.
+* I've also edit HRSGears into checking vehicle instead of using command to enable it. Here go to HRSGears.lua on line 28 add the car you want.
 ![7cb42b1df1b2c0d61d1105be1e25f920b6e926b9](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/ed6fe207-0838-4501-93fc-3139bea1a65e)
 
 
