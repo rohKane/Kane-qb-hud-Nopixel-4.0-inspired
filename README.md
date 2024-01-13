@@ -2,6 +2,12 @@
 ![Screenshot 2024-01-08 205814](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/6ee7a0a8-a4dd-416c-a647-bbeecdd4723b)
 
 
+# Add Manual transmission car
+* I've also edit HRSGears into checking vehicle instead of using command to enable it. Here go to HRSGears client.lua on line 28 add the car you want.
+![7cb42b1df1b2c0d61d1105be1e25f920b6e926b9](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/ed6fe207-0838-4501-93fc-3139bea1a65e)
+
+
+
 
 # Things you should know:
 * To open the menu in-game the **default key** is **"I"** or you can type **"/menu"**
