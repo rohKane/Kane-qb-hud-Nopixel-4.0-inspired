@@ -1116,9 +1116,6 @@ const vehHud = {
                 }
             }
             
-
-            
-            
             if (data.showSeatbelt === true) {
                 this.showSeatbelt = true;
             } else {
@@ -1146,6 +1143,9 @@ const vehHud = {
     },
     computed: {
         speedDisplay() {
+            if (!this.show) {
+                return '';
+            }
             var speedStr = this.speed.toString().padStart(3, '0');
             var html = '';
             var nonZeroEncountered = false;
@@ -1161,7 +1161,7 @@ const vehHud = {
             }
             return html;
         }
-    }
+    }    
 };
 const app3 = Vue.createApp(vehHud);
 app3.use(Quasar);
