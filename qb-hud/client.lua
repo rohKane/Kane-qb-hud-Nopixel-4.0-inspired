@@ -1101,7 +1101,6 @@ CreateThread(function()
         else
             Wait(0)
         end
-        local show = true
         local player = PlayerPedId()
         local camRot = GetGameplayCamRot(0)
         if Menu.isCompassFollowChecked then
@@ -1111,33 +1110,10 @@ CreateThread(function()
         end
         if heading == '360' then heading = '0' end
         if heading ~= lastHeading then
-            if IsPedInAnyVehicle(player) then
-                local crossroads = getCrossroads(player)
-                SendNUIMessage({
-                    action = 'update',
-                    value = heading
-                })
-                updateBaseplateHud({
-                    show,
-                    crossroads[1],
-                    crossroads[2],
-                    Menu.isCompassShowChecked,
-                    Menu.isShowStreetsChecked,
-                    Menu.isPointerShowChecked,
-                    Menu.isDegreesShowChecked,
-                })
-            else
-                if Menu.isOutCompassChecked then
-                    --[[SendNUIMessage({
-                        action = 'update',
-                        value = heading
-                    })
-                    SendNUIMessage({
-                        action = 'baseplate',
-                        show = true,
-                        showCompass = true,
-                    })]]
-                    local crossroads = getCrossroads(player)
+            local show = IsPedInAnyVehicle(player)
+            local crossroads = getCrossroads(player)
+            if not Menu.isOutCompassChecked then
+                if show then
                     SendNUIMessage({
                         action = 'update',
                         value = heading
@@ -1157,11 +1133,26 @@ CreateThread(function()
                         show = false,
                     })
                 end
+            else
+                SendNUIMessage({
+                    action = 'update',
+                    value = heading
+                })
+                updateBaseplateHud({
+                    true,
+                    crossroads[1],
+                    crossroads[2],
+                    Menu.isCompassShowChecked,
+                    Menu.isShowStreetsChecked,
+                    Menu.isPointerShowChecked,
+                    Menu.isDegreesShowChecked,
+                })
             end
         end
         lastHeading = heading
     end
 end)
+
 
 
 Citizen.CreateThread(function()
