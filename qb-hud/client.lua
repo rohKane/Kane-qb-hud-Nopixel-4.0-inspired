@@ -825,7 +825,7 @@ CreateThread(function()
                     cruiseOn = false
                     harness = false
                 end
-                DisplayRadar(Menu.isOutMapChecked)
+                DisplayRadar(not Menu.isOutMapChecked)
             end
         else
             SendNUIMessage({
@@ -1128,7 +1128,7 @@ CreateThread(function()
                 })
             else
                 if Menu.isOutCompassChecked then
-                    SendNUIMessage({
+                    --[[SendNUIMessage({
                         action = 'update',
                         value = heading
                     })
@@ -1136,6 +1136,20 @@ CreateThread(function()
                         action = 'baseplate',
                         show = true,
                         showCompass = true,
+                    })]]
+                    local crossroads = getCrossroads(player)
+                    SendNUIMessage({
+                        action = 'update',
+                        value = heading
+                    })
+                    updateBaseplateHud({
+                        show,
+                        crossroads[1],
+                        crossroads[2],
+                        Menu.isCompassShowChecked,
+                        Menu.isShowStreetsChecked,
+                        Menu.isPointerShowChecked,
+                        Menu.isDegreesShowChecked,
                     })
                 else
                     SendNUIMessage({
