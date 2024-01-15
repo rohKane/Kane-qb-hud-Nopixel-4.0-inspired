@@ -825,7 +825,7 @@ CreateThread(function()
                     cruiseOn = false
                     harness = false
                 end
-                DisplayRadar(not Menu.isOutMapChecked)
+                DisplayRadar(Menu.isOutMapChecked)
             end
         else
             SendNUIMessage({
@@ -1112,32 +1112,21 @@ CreateThread(function()
         if heading ~= lastHeading then
             local show = IsPedInAnyVehicle(player)
             local crossroads = getCrossroads(player)
+            SendNUIMessage({
+                action = 'update',
+                value = heading
+            })
             if not Menu.isOutCompassChecked then
-                if show then
-                    SendNUIMessage({
-                        action = 'update',
-                        value = heading
-                    })
-                    updateBaseplateHud({
-                        show,
-                        crossroads[1],
-                        crossroads[2],
-                        Menu.isCompassShowChecked,
-                        Menu.isShowStreetsChecked,
-                        Menu.isPointerShowChecked,
-                        Menu.isDegreesShowChecked,
-                    })
-                else
-                    SendNUIMessage({
-                        action = 'baseplate',
-                        show = false,
-                    })
-                end
-            else
-                SendNUIMessage({
-                    action = 'update',
-                    value = heading
+                updateBaseplateHud({
+                    show,
+                    show and crossroads[1] or "",
+                    show and crossroads[2] or "",
+                    Menu.isCompassShowChecked,
+                    Menu.isShowStreetsChecked,
+                    Menu.isPointerShowChecked,
+                    Menu.isDegreesShowChecked,
                 })
+            else
                 updateBaseplateHud({
                     true,
                     crossroads[1],
@@ -1152,6 +1141,9 @@ CreateThread(function()
         lastHeading = heading
     end
 end)
+
+
+
 
 
 
