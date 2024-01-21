@@ -1023,6 +1023,14 @@ CreateThread(function()
     end
 end)
 
+-- Please don't remove me i wanna be here
+RegisterCommand('cuzwhynot', function()
+    print('Kane Github : rohKane')
+    print('Kane Discord : roh_kane')
+    print('Kane Github : rohKane')
+    print('Kane Discord : roh_kane')
+end, false)
+
 -- Minimap update
 CreateThread(function()
     while true do
