@@ -183,8 +183,8 @@ div#q-loading-bar {
 #playerhud {
     position: absolute;
     display: flex;
-    left: 2vh;
-    bottom: 0vw;
+    left: 3vh;
+    bottom: 0.8vh;
 }
 
 .q-ml-xl {
@@ -370,7 +370,7 @@ altitude {
 
 /* Fuel Counter */
 #progressBar {
-    width: 0.630vw; /* Adjust as needed */
+    width: 0.620vw; /* Adjust as needed */
     height: 8.3vh; /* Adjust as needed */
     position: relative;
     border-width: 0.15vw; /* Adjust as needed */
