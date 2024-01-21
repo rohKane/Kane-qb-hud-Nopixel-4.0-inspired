@@ -223,11 +223,8 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0) 
         if manualon == true and vehicle ~= nil then
-        DisableControlAction(0, 52, true)
-        DisableControlAction(0, 86, true)
         end
     end
-
 end)
 
 -- SHIFT Alert --
