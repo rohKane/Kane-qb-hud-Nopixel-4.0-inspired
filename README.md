@@ -1,12 +1,10 @@
 # Heavily edited of QBCore Hud by me into Nopixel 4.0 inspired design with manual transmission.
-![Screenshot 2024-01-08 205814](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/6ee7a0a8-a4dd-416c-a647-bbeecdd4723b)
+![Screenshot 2024-01-28 000413](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/fe1626f3-bad3-4fde-ae74-a9d8acad7a5d)
 
 
 # Add Manual transmission car
 * I've also edit HRSGears into checking vehicle instead of using command to enable it. Here go to HRSGears.lua on line 28 add the car you want.
 ![7cb42b1df1b2c0d61d1105be1e25f920b6e926b9](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/ed6fe207-0838-4501-93fc-3139bea1a65e)
-
-
 
 
 # Things you should know:
