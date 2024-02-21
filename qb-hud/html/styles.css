@@ -199,11 +199,11 @@ div#q-loading-bar {
     position: absolute;
     font-family: 'Gravitica', sans-serif;
     color: rgba(255, 255, 255, 0.873);
-    top: -0.5vh;
+    top: -0.4vh;
     left: 2vh;
     padding-bottom: 8px;
     font-weight: 900;
-    font-size: 7.5px;
+    font-size: 7px;
     text-shadow: none;
 }
 
@@ -223,10 +223,10 @@ altitude:after {
 
 #speed {
     transform: rotate(150deg);
-    font-size: 2.1vh;
+    font-size: 1.9vh;
     position: absolute;
     font-family: 'Gravitica', sans-serif;
-    color: #5a5a5a;
+    color: #8f8f8f;
     text-align: center;
     font-weight: 600;
     text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
@@ -370,12 +370,12 @@ altitude {
 
 /* Fuel Counter */
 #progressBar {
-    width: 0.620vw; /* Adjust as needed */
-    height: 8.3vh; /* Adjust as needed */
+    width: 11px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
     position: relative;
-    border-width: 0.15vw; /* Adjust as needed */
+    border-width: 3px; /* Adjust as needed */
     border-style: solid;
-    border-color: #2b2b2bd3;
+    border-color: #2b2b2b74;
     background: #2b2b2b9a;
 }
   
@@ -393,9 +393,9 @@ altitude {
 #SeatbeltIcon {
     position: absolute;
     transition: opacity 1s ease-in-out;
-    top: -12.8vh; 
-    width: 25px; 
-    height: 25px;
+    top: -11.2vh; 
+    width: 20px; 
+    height: 20px;
 }
   
 
@@ -410,14 +410,14 @@ altitude {
 }
 
 .item {
-    width: 0.5vh;
+    width: 4px;
     /*border: 1px solid #5f6167;*/
     background-color: rgb(70, 70, 70);
     border-radius: 10px;
-    margin-left:4px;
+    margin-left: 4px;
     float: left;
     display: block;
-    height: 3.1vh;
+    height: 30px;
 }
 
 .filled {
@@ -438,8 +438,8 @@ altitude {
 
 #gearBox {
     position: absolute;
-    width: 37px;
-    height: 49px;
+    width: 32px;
+    height: 43px;
     border-radius: 3px;
     background-color: #3bd2a8;
     /* Add an inside shadow and an outside glow */
