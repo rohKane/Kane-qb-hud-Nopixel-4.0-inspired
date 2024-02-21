@@ -972,9 +972,11 @@ const playerHud = {
             if (data.radioActive) {
                 //this.talkingColor = "#D64763"; 
                 document.documentElement.style.setProperty('--radio-bar-color', '#FFFF3E');
+                document.documentElement.style.setProperty('--b-radio-bar-color', '#FFFF3E');
             } else {
                 //this.talkingColor = "#a5a8aa";
                 document.documentElement.style.setProperty('--radio-bar-color', '#c3c3c3');
+                document.documentElement.style.setProperty('--b-radio-bar-color', '#7d7b7f');
             }
             
             if (data.radio != 0 && data.radio != undefined) {
@@ -986,9 +988,11 @@ const playerHud = {
             if (data.talking) {
                 //this.talkingColor = "#FFFF3E";
                 document.documentElement.style.setProperty('--talk-bar-color', '#FFFF3E');
+                document.documentElement.style.setProperty('--b-talk-bar-color', '#FFFF3E');
             } else {
                 //this.talkingColor = "#FFFFFF";
                 document.documentElement.style.setProperty('--talk-bar-color', '#c3c3c3');
+                document.documentElement.style.setProperty('--b-talk-bar-color', '#7d7b7f');
             }
 
             //if (data.radio != 0 && data.radio != undefined) {
@@ -1156,7 +1160,7 @@ const vehHud = {
                 if (nonZeroEncountered) {
                     html += '<span style="color: white;">' + speedStr[i] + '</span>';
                 } else {
-                    html += '<span style="color: #5a5a5a;">' + speedStr[i] + '</span>';
+                    html += '<span style="color: #8f8f8f;">' + speedStr[i] + '</span>';
                 }
             }
             return html;
