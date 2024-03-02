@@ -971,8 +971,8 @@ const playerHud = {
 
             if (data.radioActive) {
                 //this.talkingColor = "#D64763"; 
-                document.documentElement.style.setProperty('--radio-bar-color', '#FFFF3E');
-                document.documentElement.style.setProperty('--b-radio-bar-color', '#FFFF3E');
+                document.documentElement.style.setProperty('--radio-bar-color', '#ff4885');
+                document.documentElement.style.setProperty('--b-radio-bar-color', '#ff488582');
             } else {
                 //this.talkingColor = "#a5a8aa";
                 document.documentElement.style.setProperty('--radio-bar-color', '#c3c3c3');
