@@ -63,7 +63,7 @@ function getinfo(gea)
             return gea
         end
     else
-        return "A"
+        return GetVehicleCurrentGear(vehicle)
     end
 end
 
