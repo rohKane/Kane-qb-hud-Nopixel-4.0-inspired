@@ -76,11 +76,13 @@
         font-size: 100px;
         margin-left: -45px !important; /* Change this to space radials */
     }
-    #Speedo {
-        font-size: 125px !important;
-    }
     #Speed {
-        font-size: 50px !important;
+        font-size: 22px !important;
+        top: -160% !important;
+    }
+    #speed:after {
+        top: -0.2vh !important;
+        left: 1.7vh !important;
     }
     #FuelGaugeBackground {
         font-size: 75px !important;
@@ -131,7 +133,8 @@
     }
     #seatbelt {
         position: relative;
-        left: 6.5vh !important;
+        left: -4vh !important;
+        top: 2.5vh !important;
     }
     speed {
         font-size: 1.2vh !important;
