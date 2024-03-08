@@ -1,5 +1,6 @@
 # Heavily edited of QBCore Hud by me into Nopixel 4.0 inspired design with manual transmission.
-![Screenshot 2024-01-28 000413](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/fe1626f3-bad3-4fde-ae74-a9d8acad7a5d)
+![Screenshot 2024-03-08 140514](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/8545af95-228b-4399-8787-7aa83eb3605d)
+
 
 
 # Add Manual transmission car
