@@ -82,7 +82,7 @@
     }
     #speed:after {
         top: -0.2vh !important;
-        left: 1.7vh !important;
+        left: 1.5vh !important;
     }
     #FuelGaugeBackground {
         font-size: 75px !important;
@@ -133,8 +133,8 @@
     }
     #seatbelt {
         position: relative;
-        left: -4vh !important;
-        top: 2.5vh !important;
+        left: -2vh !important;
+        top: 2.0vh !important;
     }
     speed {
         font-size: 1.2vh !important;
