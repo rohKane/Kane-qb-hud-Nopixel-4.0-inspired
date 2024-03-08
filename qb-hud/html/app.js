@@ -971,12 +971,12 @@ const playerHud = {
 
             if (data.radioActive) {
                 //this.talkingColor = "#D64763"; 
-                document.documentElement.style.setProperty('--radio-bar-color', '#ff4885');
-                document.documentElement.style.setProperty('--b-radio-bar-color', '#ff488582');
+                document.documentElement.style.setProperty('--radio-bar-color', '#e0467989');
+                document.documentElement.style.setProperty('--b-radio-bar-color', '#e0467989');
             } else {
                 //this.talkingColor = "#a5a8aa";
-                document.documentElement.style.setProperty('--radio-bar-color', '#c3c3c3');
-                document.documentElement.style.setProperty('--b-radio-bar-color', '#7d7b7f');
+                document.documentElement.style.setProperty('--radio-bar-color', '#d5d5d5');
+                document.documentElement.style.setProperty('--b-radio-bar-color', '#ecececd7');
             }
             
             if (data.radio != 0 && data.radio != undefined) {
@@ -987,12 +987,12 @@ const playerHud = {
 
             if (data.talking) {
                 //this.talkingColor = "#FFFF3E";
-                document.documentElement.style.setProperty('--talk-bar-color', '#FFFF3E');
-                document.documentElement.style.setProperty('--b-talk-bar-color', '#FFFF3E');
+                document.documentElement.style.setProperty('--talk-bar-color', '#eaea57b7');
+                document.documentElement.style.setProperty('--b-talk-bar-color', '#eaea57b7');
             } else {
                 //this.talkingColor = "#FFFFFF";
-                document.documentElement.style.setProperty('--talk-bar-color', '#c3c3c3');
-                document.documentElement.style.setProperty('--b-talk-bar-color', '#7d7b7f');
+                document.documentElement.style.setProperty('--talk-bar-color', '#d5d5d5');
+                document.documentElement.style.setProperty('--b-talk-bar-color', '#ecececd7');
             }
 
             //if (data.radio != 0 && data.radio != undefined) {
