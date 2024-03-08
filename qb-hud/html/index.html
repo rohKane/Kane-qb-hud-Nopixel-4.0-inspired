@@ -340,8 +340,8 @@
                         <q-icon id="FuelGaugeIcon" name="fas fa-gas-pump" style="font-size: 15px;left: -0.10vw; top: -2.5vh;" color="white"/>
                     </div>
                     <div class="responsive" id="altitudegauge" v-if="showAltitude">
-                        <q-circular-progress id="Altimeter" class="q-ml-xl" style="transform: rotate(-135deg); position: absolute; opacity: 60%; left: -49vh; top: -3vh;" :value="altitudegauge" size="70px" :thickness="0.21" color="gauge" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress id="AltimeterValue" class="q-ml-xl" style="transform: rotate(-135deg); left: -49vh; top: -3vh;" show-value :value="altitude" size="70px" :thickness="0.21" color="gauge" :min="0" :max="750">
+                        <q-circular-progress id="Altimeter" class="q-ml-xl" style="transform: rotate(-135deg); position: absolute; opacity: 60%; left: -46vh; top: -2vh;" :value="altitudegauge" size="70px" :thickness="0.21" color="bgauge" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress id="AltimeterValue" class="q-ml-xl" style="transform: rotate(-135deg); left: -46vh; top: -2vh;" show-value :value="altitude" size="70px" :thickness="0.21" color="gauge" :min="0" :max="750">
                         <altitude id="Alt">{{(altitude)}}</altitude>
                     </div>
                     <transition name="fade">
