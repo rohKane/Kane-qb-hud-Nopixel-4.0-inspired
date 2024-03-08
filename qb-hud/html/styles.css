@@ -130,8 +130,12 @@ div#q-loading-bar {
     color: rgb(0, 0, 0) !important;
 }
 .text-gauge {
-    color: rgb(255, 255, 255) !important;
+    color: #3bd2a8 !important;
 }
+.text-bgauge {
+    color: rgb(70, 70, 70) !important;
+}
+
 
 #main-container {
     width: 100%;
@@ -458,5 +462,5 @@ altitude {
 
 
 #god {
-    color: rgba(182, 72, 255, 0.5);
+    color: #287fcc;
 }
