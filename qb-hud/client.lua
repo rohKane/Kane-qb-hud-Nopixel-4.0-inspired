@@ -1177,7 +1177,7 @@ Citizen.CreateThread(function()
         local player = GetPlayerPed(-1)
         local vehicle = GetVehiclePedIsIn(player, false)
 
-        if IsPedInAnyVehicle(player, false) then
+        if IsPedInAnyVehicle(player, false) and GetIsVehicleEngineRunning(vehicle) then
         --print("is a car beu")
             local rpmlol = GetVehicleCurrentRpm(vehicle)
             local selectedgear = getSelectedGear()
@@ -1192,3 +1192,4 @@ Citizen.CreateThread(function()
         Citizen.Wait(100)
     end
 end)
+
