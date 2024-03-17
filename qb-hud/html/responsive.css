@@ -460,6 +460,10 @@
         transform: scale(1, 1);
         bottom: 6.9vh !important;
     }
+    #playerHud {
+        transform: scale(0.98) !important;
+        bottom: 1vh !important;
+    }
     .q-ml-xl {
         font-size: 50px;
     }
