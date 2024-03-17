@@ -55,7 +55,7 @@ end)
 
 function getinfo(gea)
     -- Get the vehicle the player is currently in
-    local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+    local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), false)
 
     -- Get the vehicle class
     local vehicleClass = GetVehicleClass(vehicle)
