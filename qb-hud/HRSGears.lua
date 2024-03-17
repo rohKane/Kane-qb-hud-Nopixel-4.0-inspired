@@ -54,6 +54,12 @@ Citizen.CreateThread(function()
 end)
 
 function getinfo(gea)
+    -- Get the vehicle the player is currently in
+    local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+
+    -- Get the vehicle class
+    local vehicleClass = GetVehicleClass(vehicle)
+
     if isInVehicleModel then
         if gea == 0 then
             return "N"
@@ -63,10 +69,12 @@ function getinfo(gea)
             return gea
         end
     else
-        return GetVehicleCurrentGear(vehicle)
+        -- Check if the vehicle class is not for helicopters or planes
+        if vehicleClass ~= 15 and vehicleClass ~= 16 then
+            return GetVehicleCurrentGear(vehicle)
+        end
     end
 end
-
 
 --- Possibly a lighter code ehh? ---
 --[[Citizen.CreateThread(function()
