@@ -40,9 +40,10 @@ Citizen.CreateThread(function()
             end
         end
 
-        if IsPedInAnyVehicle(player, false) and isInVehicleModel then
+        if IsPedInAnyVehicle(player, false) and isInVehicleModel == true then
             if not hasBeenSet then
                 manualon = true
+                realistic = true
                 print("A manual car? cool cool")
                 hasBeenSet = true
             end
@@ -134,7 +135,7 @@ end)]]
     end
 end)]]
 
-Citizen.CreateThread(function()
+--[[Citizen.CreateThread(function()
     while true do
         Citizen.Wait(100) 
             --if realistic == true then
@@ -145,7 +146,7 @@ Citizen.CreateThread(function()
 				--TriggerEvent('chatMessage', '', {255, 255, 255}, '^7' .. 'Manual Mode REALISTIC' .. '^7.')
         end
     end)
-
+]]
 --[[RegisterCommand("manualmode", function()
     if vehicle == nil then
         if manualon == false then
@@ -170,7 +171,7 @@ Citizen.CreateThread(function()
         local newveh = GetVehiclePedIsIn(ped,false)
         local class = GetVehicleClass(newveh)
 
-        if newveh == vehicle then
+        if newveh == vehicle and isInVehicleModel == true then
 
         elseif newveh == 0 and vehicle ~= nil then
             resetvehicle()
@@ -202,7 +203,6 @@ Citizen.CreateThread(function()
                 end
             end
         end
-
     end
 end)
 
@@ -226,14 +226,6 @@ function resetvehicle()
     currspeedlimit = nil
     ready = false
 end
-
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0) 
-        if manualon == true and vehicle ~= nil then
-        end
-    end
-end)
 
 -- SHIFT Alert --
 local isCooldown = false
@@ -291,14 +283,14 @@ RegisterCommand('shiftalert', function()
 end, false)
 
 
-function drawProgressBar(x, y, width, height, color, progress)
+--[[function drawProgressBar(x, y, width, height, color, progress)
     -- Draw the background
     DrawRect(x + width / 2, y + height / 2, width, height, 128, 128, 128, 255)
 
     -- Draw the progress
     local width = width * progress
     DrawRect(x + width / 2, y + height / 2, width, height, color.r, color.g, color.b, 255)
-end
+end]]
 
 -- RPM Counter HUD --
 --[[Citizen.CreateThread(function()
@@ -335,7 +327,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0) 
 
-        if manualon == true and vehicle ~= nil then
+        if manualon == true and vehicle ~= nil and isInVehicleModel == true then
             if vehicle ~= nil then
                 -- Shift up and down
                 RegisterCommand('+gearUp', function()
@@ -430,10 +422,8 @@ function SimulateGears()
             
             --SetVehicleMaxSpeed(vehicle,topspeedms)
         --end
-    
     end
-SetVehicleMod(vehicle,11,engineup,false)
-	
+    SetVehicleMod(vehicle,11,engineup,false)
 end
 
 Citizen.CreateThread(function()
