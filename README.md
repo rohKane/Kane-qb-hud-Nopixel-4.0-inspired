@@ -2,6 +2,9 @@
 ![image](https://github.com/rohKane/Kane-qb-hud-Nopixel-4.0-inspired/assets/47999933/b7a6050e-6a9e-44d4-bbac-4da7c17ff3a1)
 
 
+Help me by checking out more of my script here https://kane-shop.tebex.io/category/2596522
+
+
 
 # Add Manual transmission car
 * I've also edit HRSGears into checking vehicle instead of using command to enable it. Here go to HRSGears.lua on line 28 add the car you want.
