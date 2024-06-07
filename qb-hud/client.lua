@@ -1167,11 +1167,6 @@ CreateThread(function()
     end
 end)
 
-
-
-
-
-
 Citizen.CreateThread(function()
     while true do
         local player = GetPlayerPed(-1)
@@ -1193,3 +1188,4 @@ Citizen.CreateThread(function()
     end
 end)
 
+TriggerEvent('hud:client:LoadMap')
