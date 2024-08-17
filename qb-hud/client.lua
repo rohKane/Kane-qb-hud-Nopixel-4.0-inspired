@@ -1188,4 +1188,5 @@ Citizen.CreateThread(function()
     end
 end)
 
+Wait(3000)
 TriggerEvent('hud:client:LoadMap')
