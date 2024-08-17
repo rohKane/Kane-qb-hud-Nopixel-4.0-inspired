@@ -164,6 +164,8 @@ function refreshHud()
         SendNUIMessage({ action = 'hudtick', show = false })
         SendNUIMessage({ action = 'hudtick', show = true })
         refreshHudCalled = true
+        Wait(50)
+        TriggerEvent('hud:client:LoadMap')
     end
 end
 
@@ -1187,6 +1189,3 @@ Citizen.CreateThread(function()
         Citizen.Wait(100)
     end
 end)
-
-Wait(3000)
-TriggerEvent('hud:client:LoadMap')
