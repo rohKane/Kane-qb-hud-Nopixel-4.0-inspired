@@ -567,40 +567,73 @@ end)
 
 RegisterNetEvent('hud:client:ToggleAirHud', function()
     showAltitude = not showAltitude
+    if showAltitude then
+        QBCore.Functions.Notify('Altimeter activated.', 'success')
+    else
+        QBCore.Functions.Notify('Altimeter deactivated.', 'error')
+    end
 end)
 
-RegisterNetEvent('hud:client:UpdateNeeds', function(newHunger, newThirst) -- Triggered in qb-core
+RegisterNetEvent('hud:client:UpdateNeeds', function(newHunger, newThirst) -- Triggered in exter-core
     hunger = newHunger
     thirst = newThirst
+    QBCore.Functions.Notify('Needs status (hunger & thirst) updated.', 'primary')
 end)
 
 RegisterNetEvent('hud:client:UpdateStress', function(newStress) -- Add this event with adding stress elsewhere
     stress = newStress
+    QBCore.Functions.Notify('Stress status updated.', 'primary')
 end)
 
 RegisterNetEvent('hud:client:ToggleShowSeatbelt', function()
     showSeatbelt = not showSeatbelt
+    if showSeatbelt then
+        QBCore.Functions.Notify('Seatbelt HUD displayed.', 'success')
+    else
+        QBCore.Functions.Notify('Seatbelt HUD hidden.', 'error')
+    end
 end)
 
-RegisterNetEvent('seatbelt:client:ToggleSeatbelt', function() -- Triggered in smallresources
+RegisterNetEvent('seatbelt:client:ToggleSeatbelt', function()
     seatbeltOn = not seatbeltOn
+    if seatbeltOn then
+        QBCore.Functions.Notify('Seatbelt fastened.', 'success')
+    else
+        QBCore.Functions.Notify('Seatbelt unfastened!', 'error')
+    end
 end)
 
 RegisterNetEvent('seatbelt:client:ToggleCruise', function() -- Triggered in smallresources
     cruiseOn = not cruiseOn
+    if cruiseOn then
+        QBCore.Functions.Notify('Cruise control activated.', 'success')
+    else
+        QBCore.Functions.Notify('Cruise control deactivated.', 'error')
+    end
 end)
 
 RegisterNetEvent('hud:client:UpdateNitrous', function(_, nitroLevel, bool)
     nos = nitroLevel
     nitroActive = bool
+    if nitroActive then
+        QBCore.Functions.Notify('Nitrous activated!', 'success')
+    else
+        QBCore.Functions.Notify('Nitrous deactivated.', 'error')
+    end
 end)
 
 RegisterNetEvent('hud:client:UpdateHarness', function(harnessHp)
     hp = harnessHp
+    QBCore.Functions.Notify('Vehicle harness updated.', 'primary')
 end)
 
 RegisterNetEvent('qb-admin:client:ToggleDevmode', function()
     dev = not dev
+    if dev then
+        QBCore.Functions.Notify('Devmode ENABLED.', 'success')
+    else
+        QBCore.Functions.Notify('Devmode DISABLED.', 'error')
+    end
 end)
 
 local prevPlayerStats = { nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil }
